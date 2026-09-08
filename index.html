@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Diksha Phartyal - AI/ML & Backend Developer Portfolio. Specializing in FastAPI, LangChain, Qdrant Vector Search, Machine Learning Pipelines, and Scalable Backend Systems.">
+  <meta name="author" content="Diksha Phartyal">
+  <meta name="theme-color" content="#2563eb">
+  <title>Diksha Phartyal | AI/ML & Backend Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#about" class="brand-logo" aria-label="Diksha Phartyal Portfolio Home">
+        <span class="logo-badge" aria-hidden="true">&lt;DP/&gt;</span>
+        <span class="logo-text">Diksha Phartyal</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" id="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#about" class="nav-link active">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities: Theme Toggle, Print CV, Mobile Toggle -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark and light theme" title="Toggle Theme" aria-pressed="false">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="print-cv-btn" class="btn btn-outline btn-sm print-hide" aria-label="Print or download PDF resume" title="Print ATS-friendly Resume">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>Print / PDF</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="icon-btn mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-list">
+          <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+
+    <!-- HERO / ABOUT SECTION -->
+    <section id="about" class="section hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="availability-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for AI/ML & Backend Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Diksha Phartyal</span>
+          </h1>
+          <p class="hero-role">AI/ML & Backend Developer</p>
+          <p class="hero-location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Ramnagar, Uttarakhand, India (Open to Remote / Relocation)
+          </p>
+
+          <p class="hero-summary">
+            Passionate <strong>AI/ML & Backend Developer</strong> specializing in building intelligent, production-ready systems using <strong>FastAPI, LangChain, Qdrant Vector Search, Python, and modern web architectures</strong>. Creator of the live <strong>Multilingual AI Chatbot deployed on the official GBPIET website</strong> serving 300+ students across 4 languages with hybrid dense+sparse retrieval. Experienced in machine learning pipelines, data analytics, and backend API engineering.
+          </p>
+
+          <!-- Contact Details / Quick Badges -->
+          <div class="hero-quick-links" aria-label="Professional contact and profiles">
+            <a href="mailto:phartyaldiksha05@gmail.com" class="badge-link" aria-label="Send email to phartyaldiksha05@gmail.com">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>phartyaldiksha05@gmail.com</span>
+            </a>
+
+            <a href="tel:+919568646077" class="badge-link" aria-label="Call phone number +91 9568646077">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>+91-9568646077</span>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="badge-link" aria-label="Diksha Phartyal LinkedIn profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>linkedin.com</span>
+            </a>
+
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="badge-link" aria-label="Diksha Phartyal GitHub profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <span>github.com</span>
+            </a>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions print-hide">
+            <a href="https://gbpiet.ac.in" target="_blank" rel="noopener noreferrer" class="btn btn-featured-hero">
+              <span class="pulse-ring"></span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              Live on gbpiet.ac.in ↗
+            </a>
+            <a href="#projects" class="btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              Get in Touch
+            </a>
+            <button class="btn btn-outline" id="hero-print-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download CV
+            </button>
+          </div>
+
+          <!-- Highlight Metric Stats -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-number">300+</span>
+              <span class="stat-label">Students Served Live</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">~40%</span>
+              <span class="stat-label">Vector Retrieval Gain</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Industry Internships</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">8.28</span>
+              <span class="stat-label">MCA Academic CGPA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Visual Card -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="avatar-card">
+            <div class="avatar-frame">
+              <div class="avatar-fallback">
+                <span class="avatar-initials">DP</span>
+                <span class="avatar-subtitle">AI/ML • Backend • Data</span>
+              </div>
+            </div>
+            <div class="avatar-badge code-badge">
+              <span class="dot green-dot"></span>
+              <code>FastAPI + LangChain + Qdrant</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED FLAGSHIP PROJECT BANNER -->
+    <section class="section section-featured-project print-hide">
+      <div class="container">
+        <div class="featured-project-card card">
+          <div class="featured-badge-row">
+            <span class="featured-pill">
+              <span class="status-dot"></span> Flagship Live Production Project
+            </span>
+            <span class="live-tag">Active on Official College Domain</span>
+          </div>
+
+          <div class="featured-grid">
+            <div class="featured-info">
+              <h2 class="featured-title">Multilingual AI Chatbot for GBPIET Website</h2>
+              <p class="featured-subtitle">Intelligent Conversational Campus Assistant with Hybrid Dense + Sparse Vector Retrieval</p>
+              
+              <p class="featured-desc">
+                Architected and deployed an enterprise-grade AI chatbot directly on the official <strong>G.B. Pant Institute of Engineering & Technology (GBPIET)</strong> website. Integrates <strong>FastAPI, LangChain, Qdrant Vector Search, and Groq API</strong> to index and query over 100+ academic pages, resolving student inquiries with sub-second latency across 4 languages.
+              </p>
+
+              <div class="featured-metrics-list">
+                <div class="metric-item">
+                  <span class="metric-val">300+</span>
+                  <span class="metric-txt">Active students using the bot</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-val">~40%</span>
+                  <span class="metric-txt">Retrieval accuracy gain via hybrid search</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-val">4</span>
+                  <span class="metric-txt">Languages supported seamlessly</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-val">100+</span>
+                  <span class="metric-txt">Campus pages vectorized in Qdrant</span>
+                </div>
+              </div>
+
+              <div class="tech-tags">
+                <span class="tag tag-highlight">FastAPI</span>
+                <span class="tag tag-highlight">LangChain</span>
+                <span class="tag tag-highlight">Qdrant Vector DB</span>
+                <span class="tag tag-highlight">Groq API</span>
+                <span class="tag tag-highlight">React.js</span>
+                <span class="tag tag-highlight">PostgreSQL (Neon)</span>
+                <span class="tag tag-highlight">CI/CD Pipeline</span>
+              </div>
+            </div>
+
+            <div class="featured-cta-box">
+              <div class="cta-inner-card">
+                <div class="cta-icon-wrapper" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                </div>
+                <h3 class="cta-card-title">Explore Production Deployment</h3>
+                <p class="cta-card-text">Experience the live multilingual chatbot running on the official institute portal or inspect the backend architecture.</p>
+                
+                <a href="https://gbpiet.ac.in" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block btn-lg" aria-label="Open live chatbot on GBPIET official website">
+                  <span>Live on gbpiet.ac.in</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block" aria-label="View source code on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>View Source Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE SECTION -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Professional History</span>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-desc">Practical industry experience spanning emerging AI technologies, technical leadership, and backend development.</p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Role 1 -->
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Emerging Technologies Intern</h3>
+                  <div class="company-info">
+                    <span class="company-name">Edunet Foundation (AICTE & IBM SkillsBuild)</span>
+                    <span class="separator">•</span>
+                    <span class="job-location">India (Remote)</span>
+                  </div>
+                </div>
+                <div class="role-meta">
+                  <span class="role-period">May 2026 — June 2026</span>
+                  <span class="badge badge-primary">Internship</span>
+                </div>
+              </div>
+
+              <ul class="achievement-list">
+                <li>Underwent specialized technical training in emerging artificial intelligence, machine learning pipelines, and cloud computing frameworks backed by <strong>AICTE and IBM SkillsBuild</strong>.</li>
+                <li>Engineered machine learning workflows incorporating predictive modeling, automated data pre-processing, and evaluation metrics for real-world enterprise applications.</li>
+                <li>Collaborated on hands-on AI solution prototypes, applying industry best practices in modular code design, data validation, and cloud-native AI services.</li>
+              </ul>
+
+              <div class="tech-tags" aria-label="Technologies used">
+                <span class="tag">AI/ML</span>
+                <span class="tag">Python</span>
+                <span class="tag">IBM SkillsBuild</span>
+                <span class="tag">Cloud AI</span>
+                <span class="tag">Predictive Analytics</span>
+                <span class="tag">Scikit-learn</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Role 2 -->
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Strategy, Consulting & Research Intern (Team Lead)</h3>
+                  <div class="company-info">
+                    <span class="company-name">UptoSkills</span>
+                    <span class="separator">•</span>
+                    <span class="job-location">India</span>
+                  </div>
+                  <div class="cert-id-tag">Internship ID: <code>US-INT-2026-X3CR78N</code></div>
+                </div>
+                <div class="role-meta">
+                  <span class="role-period">January 2026 — May 2026</span>
+                  <span class="badge badge-primary">Team Lead</span>
+                </div>
+              </div>
+
+              <ul class="achievement-list">
+                <li>Served as <strong>Team Lead</strong> orchestrating cross-functional research and technology consulting initiatives, aligning technical deliverables with organizational goals.</li>
+                <li>Conducted rigorous data-driven analytical research, synthesized market trends, and presented actionable technological strategy roadmaps to mentors and senior stakeholders.</li>
+                <li>Mentored team members on project workflows, data synthesis, task prioritization, and structured reporting, driving a 25% improvement in milestone delivery timelines.</li>
+              </ul>
+
+              <div class="tech-tags" aria-label="Technologies used">
+                <span class="tag">Team Leadership</span>
+                <span class="tag">Tech Consulting</span>
+                <span class="tag">Data Analysis</span>
+                <span class="tag">Research & Strategy</span>
+                <span class="tag">Project Management</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Role 3 -->
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Backend Development Intern</h3>
+                  <div class="company-info">
+                    <span class="company-name">Prodesk IT & Engineering Services</span>
+                    <span class="separator">•</span>
+                    <span class="job-location">India</span>
+                  </div>
+                </div>
+                <div class="role-meta">
+                  <span class="role-period">June 2025 — July 2025</span>
+                  <span class="badge badge-neutral">Internship</span>
+                </div>
+              </div>
+
+              <ul class="achievement-list">
+                <li>Developed and maintained server-side business logic, backend controllers, and RESTful API endpoints for internal client applications.</li>
+                <li>Designed relational database schemas, structured query parameters, and optimized database transactions in SQL/PostgreSQL for improved query throughput.</li>
+                <li>Integrated API endpoints with frontend views, performed unit testing and debugging using Postman, and ensured strict data validation standards.</li>
+              </ul>
+
+              <div class="tech-tags" aria-label="Technologies used">
+                <span class="tag">Backend Engineering</span>
+                <span class="tag">Python / Node.js</span>
+                <span class="tag">RESTful APIs</span>
+                <span class="tag">PostgreSQL / SQL</span>
+                <span class="tag">Postman</span>
+                <span class="tag">Git</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section bg-subtle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Portfolio Work</span>
+          <h2 class="section-title">Key Projects & Systems</h2>
+          <p class="section-desc">Production deployments, machine learning pipelines, and analytical data dashboards.</p>
+        </div>
+
+        <!-- Filter Controls (Web only) -->
+        <div class="filter-controls print-hide" role="tablist" aria-label="Filter projects by category">
+          <button class="filter-tab active" role="tab" aria-selected="true" data-filter="all">All Projects</button>
+          <button class="filter-tab" role="tab" aria-selected="false" data-filter="aiml">AI / ML & GenAI</button>
+          <button class="filter-tab" role="tab" aria-selected="false" data-filter="analytics">Data Analytics</button>
+          <button class="filter-tab" role="tab" aria-selected="false" data-filter="backend">Backend Systems</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Project 1: Featured Project in Grid as well for complete catalog -->
+          <article class="project-card card project-card-featured" data-category="aiml">
+            <div class="project-header">
+              <div class="project-category-badge">Flagship • AI / ML & Backend</div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Multilingual AI Chatbot GitHub Repository">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://gbpiet.ac.in" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GBPIET Live Chatbot Link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://gbpiet.ac.in" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                Multilingual AI Chatbot for GBPIET ↗
+              </a>
+            </h3>
+            <p class="project-desc">
+              Live AI conversational assistant powering the GBPIET website. Employs FastAPI, LangChain, Qdrant Vector DB, Groq LLM inference, and React.js to parse and query 100+ university web pages across 4 languages.
+            </p>
+            <div class="project-impact">
+              <strong>Impact:</strong> Deployed live on <code>gbpiet.ac.in</code> serving 300+ students with ~40% retrieval gain via hybrid dense+sparse vector search.
+            </div>
+            <div class="tech-tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">Qdrant</span>
+              <span class="tag">Groq API</span>
+              <span class="tag">React.js</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <div class="project-card-actions print-hide">
+              <a href="https://gbpiet.ac.in" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <span>Live on gbpiet.ac.in ↗</span>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span>View Source</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Car Price Prediction ML Pipeline -->
+          <article class="project-card card" data-category="aiml">
+            <div class="project-header">
+              <div class="project-category-badge">Machine Learning • Python</div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Car Price Prediction GitHub Repository">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                Car Price Prediction ML Pipeline ↗
+              </a>
+            </h3>
+            <p class="project-desc">
+              End-to-end regression machine learning pipeline predicting used vehicle market valuations. Features systematic exploratory data analysis (EDA), categorical encoding, missing value imputation, outlier pruning, and hyperparameter tuning.
+            </p>
+            <div class="project-impact">
+              <strong>Key Achievement:</strong> Achieved high \(R^2\) predictive accuracy using cross-validated gradient boosting and linear ensemble models on diverse automotive datasets.
+            </div>
+            <div class="tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Regression</span>
+            </div>
+            <div class="project-card-actions print-hide">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <span>View on GitHub ↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Customer Churn Analysis Dashboard -->
+          <article class="project-card card" data-category="analytics">
+            <div class="project-header">
+              <div class="project-category-badge">BI & Analytics • Power BI</div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Customer Churn Analysis GitHub Repository">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                Customer Churn Analysis Dashboard ↗
+              </a>
+            </h3>
+            <p class="project-desc">
+              Interactive business intelligence dashboard isolating primary drivers of customer attrition. Built with advanced DAX measures, dynamic KPI cards, and demographic segmentation visual layers for proactive customer retention.
+            </p>
+            <div class="project-impact">
+              <strong>Key Achievement:</strong> Uncovered key contract length and service interaction signals contributing to over 70% of identified churn risk patterns.
+            </div>
+            <div class="tech-tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">DAX</span>
+              <span class="tag">Data Modeling</span>
+              <span class="tag">Data Visualization</span>
+              <span class="tag">Business Analytics</span>
+            </div>
+            <div class="project-card-actions print-hide">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <span>View on GitHub ↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Business Sales Performance Analytics -->
+          <article class="project-card card" data-category="analytics">
+            <div class="project-header">
+              <div class="project-category-badge">Data Science • Analytics</div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Business Sales Performance GitHub Repository">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                Business Sales Performance Analytics ↗
+              </a>
+            </h3>
+            <p class="project-desc">
+              Extensive exploratory data analytics system evaluating multi-region sales, profit margins, product categories, and customer purchase trends to pinpoint strategic revenue growth opportunities.
+            </p>
+            <div class="project-impact">
+              <strong>Key Achievement:</strong> Synthesized multi-dimensional sales trends across fiscal quarters, identifying top revenue-yielding product tiers and regional bottlenecks.
+            </div>
+            <div class="tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">Seaborn</span>
+              <span class="tag">EDA</span>
+            </div>
+            <div class="project-card-actions print-hide">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <span>View on GitHub ↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5: Unemployment Analysis -->
+          <article class="project-card card" data-category="analytics">
+            <div class="project-header">
+              <div class="project-category-badge">Data Science • Statistical Analysis</div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="Unemployment Analysis GitHub Repository">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                Unemployment Rate Analysis ↗
+              </a>
+            </h3>
+            <p class="project-desc">
+              Socioeconomic data science project analyzing unemployment rate dynamics, labor force participation indices, and regional variations across different states and time periods using statistical storytelling.
+            </p>
+            <div class="project-impact">
+              <strong>Key Achievement:</strong> Evaluated macroeconomic pandemic impact and recovery trajectories using statistical distribution curves and comparative timeline charts.
+            </div>
+            <div class="tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Statistics</span>
+              <span class="tag">Data Visualization</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Time-Series</span>
+            </div>
+            <div class="project-card-actions print-hide">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <span>View on GitHub ↗</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW DEDICATED SECTION: HACKATHONS & CHALLENGES -->
+    <section id="hackathons" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Innovation & Speed</span>
+          <h2 class="section-title">Hackathons & Challenges</h2>
+          <p class="section-desc">Competitive hackathons and collaborative development sprints building high-impact AI prototypes and scalable backend solutions.</p>
+        </div>
+
+        <div class="hackathons-grid">
+
+          <!-- Hackathon 1: ViCoDathon 2026 -->
+          <article class="hackathon-card card">
+            <div class="hackathon-badge-bar">
+              <span class="hackathon-status status-completed">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Completed
+              </span>
+              <span class="hackathon-date">August 2026</span>
+            </div>
+
+            <h3 class="hackathon-title">ViCoDathon 2026</h3>
+            <div class="hackathon-organizer">Organized by <strong>AB Talks</strong></div>
+
+            <div class="hackathon-cert-box">
+              <div class="cert-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </div>
+              <div>
+                <span class="cert-badge-text">Awarded Certificate of Participation</span>
+                <div class="cert-id-string">Certificate ID: <code>ABT-HK-K7VGP</code></div>
+              </div>
+            </div>
+
+            <p class="hackathon-focus">
+              <strong>Core Focus:</strong> Participated in India's premier <strong>AI Vibe Coding Hackathon</strong>, leveraging state-of-the-art AI-augmented developer tooling, prompt workflows, and rapid scaffolding to build impactful real-world software solutions under strict timed constraints.
+            </p>
+
+            <div class="tech-tags">
+              <span class="tag">AI Vibe Coding</span>
+              <span class="tag">GenAI Tools</span>
+              <span class="tag">Rapid Prototyping</span>
+              <span class="tag">Full-Stack AI</span>
+            </div>
+          </article>
+
+          <!-- Hackathon 2: Podar Startupthon (Build 4 Bharat) -->
+          <article class="hackathon-card card card-ongoing">
+            <div class="hackathon-badge-bar">
+              <span class="hackathon-status status-live">
+                <span class="status-pulse-dot" aria-hidden="true"></span>
+                Live / Active
+              </span>
+              <span class="hackathon-date">Voting Phase Ongoing</span>
+            </div>
+
+            <h3 class="hackathon-title">Podar Startupthon (Build 4 Bharat)</h3>
+            <div class="hackathon-organizer">Organized by <strong>UptoSkills & Podar Educational Institutions</strong></div>
+
+            <div class="hackathon-cert-box ongoing-box">
+              <div class="cert-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+              <div>
+                <span class="cert-badge-text">Voting Phase Ongoing</span>
+                <div class="cert-id-string">Initiative: <code>Build 4 Bharat Innovation Track</code></div>
+              </div>
+            </div>
+
+            <p class="hackathon-focus">
+              <strong>Core Focus:</strong> Building innovative, high-impact technical solutions for the Indian startup and business ecosystem to empower emerging enterprises through technology-driven scalability.
+            </p>
+
+            <div class="tech-tags">
+              <span class="tag">Startupthon</span>
+              <span class="tag">Innovation</span>
+              <span class="tag">Build 4 Bharat</span>
+              <span class="tag">AI Solutions</span>
+            </div>
+          </article>
+
+          <!-- Hackathon 3: TechGig Sovereign Technology For India Hackathon -->
+          <article class="hackathon-card card card-ongoing">
+            <div class="hackathon-badge-bar">
+              <span class="hackathon-status status-live">
+                <span class="status-pulse-dot" aria-hidden="true"></span>
+                Live / Active
+              </span>
+              <span class="hackathon-date">Prototype Build Phase</span>
+            </div>
+
+            <h3 class="hackathon-title">TechGig Sovereign Technology For India Hackathon</h3>
+            <div class="hackathon-organizer">Track: <strong>Artificial Intelligence & Deep Tech</strong></div>
+
+            <div class="hackathon-cert-box ongoing-box">
+              <div class="cert-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <div>
+                <span class="cert-badge-text">Prototype Build Phase</span>
+                <div class="cert-id-string">Track: <code>AI & Deep Tech Sovereign Solutions</code></div>
+              </div>
+            </div>
+
+            <p class="hackathon-focus">
+              <strong>Core Focus:</strong> Developing cutting-edge AI, machine learning, and generative AI solutions to address national priorities and accelerate India's technological leadership and digital sovereignty.
+            </p>
+
+            <div class="tech-tags">
+              <span class="tag">GenAI</span>
+              <span class="tag">Deep Tech</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Sovereign AI</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="section bg-subtle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Technical Competencies</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-desc">Core toolset honed across artificial intelligence, machine learning pipelines, backend engineering, and data science.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1 -->
+          <div class="skill-category card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A7.003 7.003 0 0 1 5.07 11H5a1 1 0 0 1 0-2h.07A7.003 7.003 0 0 1 11 3.07V3a1 1 0 0 1 2 0v.07A7.003 7.003 0 0 1 18.93 9H19a1 1 0 0 1 0 2h-.07A7.003 7.003 0 0 1 13 16.93z"></path></svg>
+              </div>
+              <h3 class="skill-cat-title">AI/ML & Generative AI</h3>
+            </div>
+            <ul class="skill-pill-list">
+              <li><span class="skill-pill">LangChain</span></li>
+              <li><span class="skill-pill">Qdrant (Vector DB)</span></li>
+              <li><span class="skill-pill">RAG (Retrieval-Augmented Generation)</span></li>
+              <li><span class="skill-pill">Hybrid Dense + Sparse Search</span></li>
+              <li><span class="skill-pill">Groq API & LLM Inference</span></li>
+              <li><span class="skill-pill">Scikit-learn</span></li>
+              <li><span class="skill-pill">Machine Learning Pipelines</span></li>
+            </ul>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skill-category card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="skill-cat-title">Languages & Core</h3>
+            </div>
+            <ul class="skill-pill-list">
+              <li><span class="skill-pill">Python (Advanced)</span></li>
+              <li><span class="skill-pill">SQL & Query Optimization</span></li>
+              <li><span class="skill-pill">JavaScript (ES6+)</span></li>
+              <li><span class="skill-pill">HTML5 & Semantic Markup</span></li>
+              <li><span class="skill-pill">CSS3 & Modern Layouts</span></li>
+              <li><span class="skill-pill">C / C++ Basics</span></li>
+            </ul>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skill-category card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <h3 class="skill-cat-title">Backend & Frameworks</h3>
+            </div>
+            <ul class="skill-pill-list">
+              <li><span class="skill-pill">FastAPI</span></li>
+              <li><span class="skill-pill">React.js</span></li>
+              <li><span class="skill-pill">RESTful API Architecture</span></li>
+              <li><span class="skill-pill">Node.js / Express</span></li>
+              <li><span class="skill-pill">Postman API Testing</span></li>
+              <li><span class="skill-pill">Microservices Logic</span></li>
+            </ul>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="skill-category card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"></path><path d="M12 20V4"></path><path d="M6 20v-6"></path></svg>
+              </div>
+              <h3 class="skill-cat-title">Data Science & Analytics</h3>
+            </div>
+            <ul class="skill-pill-list">
+              <li><span class="skill-pill">Pandas</span></li>
+              <li><span class="skill-pill">NumPy</span></li>
+              <li><span class="skill-pill">Power BI</span></li>
+              <li><span class="skill-pill">DAX Expressions</span></li>
+              <li><span class="skill-pill">Matplotlib & Seaborn</span></li>
+              <li><span class="skill-pill">Exploratory Data Analysis (EDA)</span></li>
+            </ul>
+          </div>
+
+          <!-- Category 5 -->
+          <div class="skill-category card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <h3 class="skill-cat-title">Databases & Vector Stores</h3>
+            </div>
+            <ul class="skill-pill-list">
+              <li><span class="skill-pill">PostgreSQL (Neon Cloud)</span></li>
+              <li><span class="skill-pill">Qdrant Vector Database</span></li>
+              <li><span class="skill-pill">Relational Schema Design</span></li>
+              <li><span class="skill-pill">Vector Embeddings</span></li>
+              <li><span class="skill-pill">Data Indexing</span></li>
+            </ul>
+          </div>
+
+          <!-- Category 6 -->
+          <div class="skill-category card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <h3 class="skill-cat-title">DevOps & Leadership</h3>
+            </div>
+            <ul class="skill-pill-list">
+              <li><span class="skill-pill">Git & GitHub</span></li>
+              <li><span class="skill-pill">CI/CD Automation</span></li>
+              <li><span class="skill-pill">Team Leadership (Intern Lead)</span></li>
+              <li><span class="skill-pill">Strategic Consulting</span></li>
+              <li><span class="skill-pill">Problem Solving & Analytical Thinking</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS SECTION -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Academic Background</span>
+          <h2 class="section-title">Education & Credentials</h2>
+          <p class="section-desc">Degrees, certifications, and technical accomplishments in computer science and mathematics.</p>
+        </div>
+
+        <div class="credentials-grid">
+
+          <!-- Education Degrees Column -->
+          <div class="education-column">
+            
+            <!-- MCA Degree -->
+            <div class="credential-card card">
+              <div class="credential-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <div class="credential-body">
+                <div class="credential-period">2024 — 2026</div>
+                <h3 class="credential-title">Master of Computer Applications (MCA)</h3>
+                <p class="credential-issuer">Govind Ballabh Pant Institute of Engineering & Technology (GBPIET), Pauri Garhwal</p>
+                <div class="cgpa-pill">CGPA: <strong>8.28 / 10.0</strong></div>
+                <p class="credential-notes">
+                  Advanced coursework in Artificial Intelligence, Machine Learning, Advanced Database Management, Software Engineering, and Cloud Architectures. Creator of the institute's official chatbot.
+                </p>
+              </div>
+            </div>
+
+            <!-- BSc Degree -->
+            <div class="credential-card card">
+              <div class="credential-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <div class="credential-body">
+                <div class="credential-period">2021 — 2024</div>
+                <h3 class="credential-title">Bachelor of Science (BSc)</h3>
+                <p class="credential-issuer">Kumaun University, Nainital, Uttarakhand</p>
+                <div class="cgpa-pill">CGPA: <strong>6.07 / 10.0</strong></div>
+                <p class="credential-notes">
+                  Foundational studies in Mathematics, Computer Applications, and Analytical Sciences.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Certifications & Honors Column -->
+          <div class="certifications-list">
+
+            <div class="cert-item card">
+              <div class="cert-badge" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </div>
+              <div class="cert-content">
+                <h4 class="cert-name">ViCoDathon 2026 Certificate of Participation</h4>
+                <p class="cert-meta">AB Talks • Certificate ID: <code>ABT-HK-K7VGP</code> • Issued August 2026</p>
+                <p class="cert-desc">Awarded for active participation in India's premier AI Vibe Coding Hackathon, demonstrating rapid AI-native development.</p>
+              </div>
+            </div>
+
+            <div class="cert-item card">
+              <div class="cert-badge" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+              </div>
+              <div class="cert-content">
+                <h4 class="cert-name">Emerging Technologies Internship Completion</h4>
+                <p class="cert-meta">Edunet Foundation (AICTE & IBM SkillsBuild) • June 2026</p>
+                <p class="cert-desc">Recognized for hands-on technical proficiency in artificial intelligence, cloud architectures, and machine learning pipelines.</p>
+              </div>
+            </div>
+
+            <div class="cert-item card">
+              <div class="cert-badge" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path></svg>
+              </div>
+              <div class="cert-content">
+                <h4 class="cert-name">Strategy & Consulting Team Lead Recognition</h4>
+                <p class="cert-meta">UptoSkills • Intern ID: <code>US-INT-2026-X3CR78N</code> • May 2026</p>
+                <p class="cert-desc">Acknowledged for stellar leadership, cross-functional team coordination, and data-driven consulting research deliverables.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section bg-subtle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-desc">Interested in discussing AI/ML solutions, backend opportunities, or hackathon collaborations? Let's talk!</p>
+        </div>
+
+        <div class="contact-wrapper">
+
+          <!-- Contact Information & Quick Actions -->
+          <div class="contact-info-panel card">
+            <h3 class="panel-title">Direct Contact Channels</h3>
+            <p class="panel-desc">Reach out directly via email, phone, or any professional profile below.</p>
+
+            <div class="contact-cards-list">
+
+              <!-- Email Card -->
+              <div class="contact-card">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:phartyaldiksha05@gmail.com" class="contact-value" id="email-text">phartyaldiksha05@gmail.com</a>
+                </div>
+                <button class="copy-btn icon-btn print-hide" data-copy-target="email-text" aria-label="Copy email address to clipboard" title="Copy email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-card">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+919568646077" class="contact-value" id="phone-text">+91-9568646077</a>
+                </div>
+                <button class="copy-btn icon-btn print-hide" data-copy-target="phone-text" aria-label="Copy phone number to clipboard" title="Copy phone">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-card">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Ramnagar, Uttarakhand, India</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Social Media Buttons -->
+            <div class="social-links-row">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Diksha Phartyal GitHub Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub Profile</span>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Diksha Phartyal LinkedIn Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>LinkedIn Profile</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form (Web only) -->
+          <div class="contact-form-panel card print-hide">
+            <h3 class="panel-title">Send a Direct Message</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Your Full Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="contact-name" name="name" required placeholder="e.g. Priyanshu Sharma" class="form-control" autocomplete="name">
+                <span class="field-error" id="name-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Your Email Address <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="contact-email" name="email" required placeholder="e.g. recruiter@company.com" class="form-control" autocomplete="email">
+                <span class="field-error" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="contact-subject" name="subject" required placeholder="e.g. AI/ML Developer Opportunity" class="form-control">
+                <span class="field-error" id="subject-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message <span class="required" aria-hidden="true">*</span></label>
+                <textarea id="contact-message" name="message" rows="4" required placeholder="Hi Diksha, I was impressed by your Multilingual AI Chatbot for GBPIET..." class="form-control"></textarea>
+                <span class="field-error" id="message-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn btn-primary btn-block">
+                <span class="btn-text-content">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                  Send Message
+                </span>
+              </button>
+
+              <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-copy">
+        <p>© 2026 Diksha Phartyal. Built with semantic HTML5, CSS3, & vanilla JavaScript.</p>
+        <p class="footer-ats-note">ATS-compliant layout • WCAG 2.1 AA Accessible • AI/ML & Backend Developer</p>
+      </div>
+
+      <div class="footer-actions print-hide">
+        <a href="#about" class="back-to-top-btn" aria-label="Scroll back to top of page">
+          <span>Back to Top</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification element for copy feedback -->
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- JavaScript Bundle -->
+  <script src="script.js"></script>
+</body>
+</html>
