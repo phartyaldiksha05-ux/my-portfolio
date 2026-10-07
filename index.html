@@ -20,6 +20,7 @@
 <meta name="twitter:title" content="Diksha Phartyal — AI/ML & Backend Developer">
 <meta name="twitter:description" content="MCA graduate who built a live multilingual RAG chatbot serving 300+ students across 4 languages.">
 <meta name="twitter:image" content="assets/og-image.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -372,6 +373,30 @@
   .c-note{font-size:12px; color:var(--slate);}
   .avail{display:inline-flex; gap:8px; align-items:center; font-size:13px; color:var(--ink-soft); margin-bottom:18px;}
   @media(max-width:820px){.contact-grid{grid-template-columns:1fr; gap:28px;} .contact-inner-bg{padding:44px 22px;} .ask-panel .wbubble{max-width:92%;}}
+
+  .proj-grid.reveal-group > .reveal:nth-child(1), .certs-grid.reveal-group > .reveal:nth-child(1){transition-delay:.03s;}
+  .proj-grid.reveal-group > .reveal:nth-child(2), .certs-grid.reveal-group > .reveal:nth-child(2){transition-delay:.09s;}
+  .proj-grid.reveal-group > .reveal:nth-child(3), .certs-grid.reveal-group > .reveal:nth-child(3){transition-delay:.15s;}
+  .proj-grid.reveal-group > .reveal:nth-child(4), .certs-grid.reveal-group > .reveal:nth-child(4){transition-delay:.21s;}
+  .proj-grid.reveal-group > .reveal:nth-child(5), .certs-grid.reveal-group > .reveal:nth-child(5){transition-delay:.27s;}
+  .proj-grid.reveal-group > .reveal:nth-child(6), .certs-grid.reveal-group > .reveal:nth-child(6){transition-delay:.33s;}
+  .proj-grid.reveal-group > .reveal:nth-child(7), .certs-grid.reveal-group > .reveal:nth-child(7){transition-delay:.39s;}
+  .proj-grid.reveal-group > .reveal:nth-child(8), .certs-grid.reveal-group > .reveal:nth-child(8){transition-delay:.45s;}
+  /* Glow + icon motion on hover, layered on top of the existing lift */
+  .proj-card{position:relative; overflow:hidden;}
+  .proj-card::before{content:''; position:absolute; inset:0; padding:1px; border-radius:inherit; background:var(--grad); opacity:0; transition:opacity .25s ease; -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude; pointer-events:none;}
+  .proj-card:hover::before{opacity:1;}
+  .proj-card:hover{box-shadow:0 22px 44px rgba(0,0,0,.4), 0 0 0 1px rgba(255,79,163,.15);}
+  .proj-icon, .proj-top .proj-icon{transition:transform .35s ease;}
+  .proj-card:hover .proj-icon{transform:scale(1.15) rotate(-6deg);}
+  .tag-sm{transition:border-color .15s ease, color .15s ease, transform .15s ease;}
+  .proj-card:hover .tag-sm{border-color:#44445c;}
+  .cert-card{transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;}
+  .cert-card:hover{transform:translateY(-3px); box-shadow:0 16px 32px rgba(0,0,0,.35); border-color:#33334D;}
+  @media (prefers-reduced-motion: reduce){
+    .proj-card:hover .proj-icon{transform:none;}
+    .proj-card, .cert-card{transition:none;}
+  }
 </style>
 </head>
 <body>
@@ -520,7 +545,7 @@
         <h2>Projects</h2>
         <p>Live AI applications first, then data and ML builds from my GitHub.</p>
       </div>
-      <div class="proj-grid">
+      <div class="proj-grid reveal-group">
 
         <div class="proj-card featured reveal">
           <div class="proj-top">
@@ -627,7 +652,7 @@
           <div class="meta">CGPA 6.07 · 2021–2024</div>
         </div>
       </div>
-      <div class="certs-grid">
+      <div class="certs-grid reveal-group">
         <div class="cert-card reveal">
           <div class="cert-row">
             <div class="cert-icon">✓</div>
